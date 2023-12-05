@@ -33,7 +33,7 @@ const globalCss = defineGlobalStyles({
   }
 });
 
-export default defineConfig({
+const definedConfig = defineConfig({
   // Whether to use css reset
   preflight: true,
 
@@ -68,3 +68,5 @@ export default defineConfig({
   outdir: "styled-system",
   globalCss
 });
+
+export default definedConfig;

@@ -9,7 +9,7 @@ type Props = {
 
 const navStyles = css({
   fontFamily: 'zen',
-  fontSize: ['md', 'xl'],
+  fontSize: ['sm', 'xl'],
   fontWeight: 700,
   textTransform: 'uppercase',
   cursor: 'pointer',

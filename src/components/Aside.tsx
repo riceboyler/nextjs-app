@@ -12,7 +12,7 @@ const Aside = ({ title, children }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Box
-      bgGradient={'to-b'}
+      bgGradient={'to-br'}
       gradientFrom="gray.700"
       gradientTo="pink.700"
       p={1}
@@ -29,11 +29,12 @@ const Aside = ({ title, children }: Props) => {
       </Box>
       <Box
         p={4}
-        mx={16}
+        mx={[4, 16]}
         fontSize="large"
         height={isOpen ? 'auto' : '0'}
         opacity={isOpen ? '1' : '0'}
         transition="all 0.5s ease-in-out"
+        textAlign={['left', 'center']}
       >
         {children}
       </Box>
