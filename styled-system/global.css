@@ -33,4 +33,19 @@
     --scale-x: 1;
     --scale-y: 1
     }
+
+  p {
+    font-family: var(--fonts-zilla);
+    font-size: 18px;
+    font-weight: 400
+    }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonts-zen);
+    font-weight: 700
+    }
+
+  em, i, [font-style=italic] {
+    font-family: var(--fonts-permanent)
+    }
 }

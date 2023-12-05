@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { PermanentMarker, ZenKaku, ZillaSlab } from '../styles/fonts';
 import { css } from '../../styled-system/css';
+import { Container, Center } from '../../styled-system/jsx';
+import { Footer } from '../components/Footer';
+import { Navbar } from '../components/Navbar';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -25,7 +28,13 @@ export default function RootLayout({
           color: 'slate.50'
         })}
       >
-        {children}
+        <Navbar />
+        <Container minH="75vh">
+          <Center className={css({ fontFamily: 'zen', fontSize: "2xl", fontWeight: 'bold' })}>
+            {children}
+          </Center>
+        </Container>
+        <Footer />
       </body>
     </html>
   );

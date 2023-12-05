@@ -55,5 +55,27 @@ export const textStyles = defineTextStyles({
       textDecoration: 'None',
       textTransform: 'None'
     }
+  },
+  h5: {
+    value: {
+      fontFamily: 'var(--font-zen-kaku)',
+      fontWeight: '700',
+      fontSize: '2xl',
+      lineHeight: 'auto',
+      letterSpacing: '0',
+      textDecoration: 'None',
+      textTransform: 'None'
+    }
+  },
+  h6: {
+    value: {
+      fontFamily: 'var(--font-zen-kaku)',
+      fontWeight: '700',
+      fontSize: 'xl',
+      lineHeight: 'auto',
+      letterSpacing: '0',
+      textDecoration: 'None',
+      textTransform: 'None'
+    }
   }
 });
