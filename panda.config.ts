@@ -12,8 +12,21 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        fonts: {
+          body: { value: 'Zilla Slab' },
+          zilla: { value: 'var(--font-zilla-slab)' },
+          zen: { value: 'var(--font-zen-kaku)' },
+          permanent: { value: 'var(--font-permanent-marker)' }
+        },
+        colors: {
+          background: { value: 'slate.900' }
+        }
+      }
+    },
   },
+  jsxFramework: "react",
 
   // The output directory for your css system
   outdir: "styled-system",
