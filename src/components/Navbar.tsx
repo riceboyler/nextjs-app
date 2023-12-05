@@ -27,6 +27,10 @@ export const Navbar = () => {
       <Link
         href="/"
         passHref
+        className={css({
+          textDecoration: 'none',
+          color: 'inherit'
+        })}
       >
         <HStack
           gap={2}
@@ -48,7 +52,7 @@ export const Navbar = () => {
               fontSize: ['xl', '3xl'],
               fontWeight: 700,
               letterSpacing: 'tighter',
-              color: 'blue.600'
+              color: 'blue.600',
             })}
           >
             riceboyler

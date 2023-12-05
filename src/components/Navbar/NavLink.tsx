@@ -16,12 +16,21 @@ const navStyles = css({
   _hover: {
     color: 'green.500'
   },
-  marginBottom: 0
+  marginBottom: 0,
 });
 
 export const NavLink = ({ href, children }: Props) => {
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+      className={css({
+        textDecoration: 'none',
+        _hover: {
+          textDecoration: 'underline',
+          color: 'green.500'
+        }
+      })}
+    >
       <h3 className={navStyles}>{children}</h3>
     </Link>
   );

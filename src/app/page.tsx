@@ -8,7 +8,7 @@ import { PageHeader } from '../components/Typography/PageHeader';
 export default function Home() {
   return (
     <Stack gap={4}>
-      <ContentBox>
+      <ContentBox backgroundColor="gray.700">
         <PageHeader
           fontWeight="300"
           fontSize="4xl"
@@ -72,7 +72,12 @@ export default function Home() {
               <Link href="https://typescriptlang.org">TypeScript</Link> - I used to hate it. Now I don't know how to ever go back to plain JavaScript again!
             </li>
             <li>
-              <Link href="https://chakra-ui.com">Chakra UI</Link> - a library for building UI components with a focus on accessibility and performance.
+              <Link href="https://panda-css.com">Panda CSS</Link> - From the creators of Chakra UI (see below), this is a utlitity-first CSS framework that is super easy to use and has a lot of great features. And as a huge benefit since I love Chakra, it uses a very similar syntax, but it all done via PostCSS, so it doesn't require a JS runtime. Pretty
+            </li>
+            <li>
+              <styled.span textDecoration="line-through">
+                <Link href="https://chakra-ui.com">Chakra UI</Link> - a library for building UI components with a focus on accessibility and performance.
+              </styled.span>
               <Aside title="Some thoughts about UI Libraries">
                 I've been going through <Link href="https://css-for-js.dev">Josh W. Comeau's absolutely phenomenal CSS for JS Devs course</Link> and while I love it, I kinda disagree that you shouldn't use a base UI component library. I understand his points about not using something like MUI or Bootstrap, but Chakra-UI is so unopinionated (and it makes it SO easy to implement CSS as props) that I'm gonna argue with him. Either way, huge props (see what I did there?) to Josh for an outstanding course!
               </Aside>

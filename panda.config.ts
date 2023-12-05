@@ -1,11 +1,21 @@
 import { defineConfig, defineGlobalStyles } from "@pandacss/dev";
 import { textStyles } from "./src/styles/textStyles";
+import pandaPreset from '@pandacss/preset-panda';
 
 const globalCss = defineGlobalStyles({
-  'p': {
+  'body, p, ul, li': {
     fontFamily: 'zilla',
     fontSize: '18px',
     fontWeight: '400'
+  },
+  'a': {
+    textDecoration: 'underline',
+  },
+  'a:hover': {
+    color: 'orange.300'
+  },
+  'p': {
+    marginBottom: '8px'
   },
   'h1, h2, h3, h4, h5, h6': {
     fontFamily: 'zen',
@@ -14,6 +24,13 @@ const globalCss = defineGlobalStyles({
   'em, i, [font-style=italic]': {
     fontFamily: 'permanent'
   },
+  'ul': {
+    listStyleType: 'disc',
+    listStylePosition: 'inside'
+  },
+  'li': {
+    marginBottom: '8px'
+  }
 });
 
 export default defineConfig({
@@ -44,6 +61,8 @@ export default defineConfig({
     },
   },
   jsxFramework: "react",
+
+  presets: [pandaPreset],
 
   // The output directory for your css system
   outdir: "styled-system",
