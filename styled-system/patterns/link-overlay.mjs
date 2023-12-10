@@ -12,7 +12,7 @@ transform(props) {
       cursor: "inherit",
       inset: "0",
       zIndex: "0",
-      ...props["_before"]
+      ...props._before
     },
     ...props
   };
