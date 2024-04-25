@@ -44,13 +44,32 @@ export type Experience = {
 
 const experience: Experience[] = [
   {
+    title: 'Marketing Tech Lead',
+    company: 'Chatbooks',
+    companyUrl: 'https://chatbooks.com',
+    location: 'Lehi, UT (Remote)',
+    description: 'Own all marketing technology decisions and implementation details, including moving from Prismic to Builder.io for our CMS and evaluating potentially moving to Shopify Plus for our e-commerce solution. Integrated Builder with custom components to override base blocks like buttons and images (to add analytics data and to use `next/image` for better pre-processing. Established processes for non-technical business users to be able to edit pages. Spearheaded effort to move Shop Screen and Product Description Pages (PDPs) from native apps to Builder and integrate segmented shop screens based on customer data.',
+    start: '3/2023',
+    end: 'Present',
+    technologiesUsed: [
+      'Next.js',
+      'NX',
+      'PandaCSS',
+      'Vercel',
+      'Builder.io',
+      'Formiz',
+      'Figma'
+    ]
+  },
+  {
     title: 'Web Development Manager/Front-End Lead',
     company: 'Chatbooks',
     companyUrl: 'https://chatbooks.com',
     location: 'Lehi, UT (Remote)',
     description: 'Manage a team of 3 front-end developers. Migrate site and web application to NX monorepo using Next.js for both Static Site Generation and Server-Side Rendering. Implement custom component library utilizing ChakraUI and Framer Motion. Assist with implementation of custom API layer using TanStack Query to manage app state. Migrate hosting from AWS to Vercel for improved performance and reduced cost.',
     start: '2/2021',
-    end: 'Present',
+    end: '3/2023',
+    reasonForLeaving: 'Changed departments and roles',
     technologiesUsed: [
       'Next.js',
       'NX',
@@ -180,12 +199,23 @@ const experience: Experience[] = [
 
 const freelance: Experience[] = [
   {
+    title: 'Senior Software Engineer',
+    company: 'Code Particle',
+    location: 'Fully Remote',
+    description: 'Worked on updated (currently unpublished) version of new Code Particle website using Next.js. Worked with a major health supplement client to improve their e-commerce solution and integrate with Sanity CMS.',
+    start: '8/2023',
+    end: '4/2024',
+    reasonForLeaving: 'Contract ended',
+    technologiesUsed: ['React', 'Next.js', 'Sanity CMS', 'Storybook']
+  },
+  {
     title: 'Front-end Developer',
     company: 'Hidden Ocean',
     location: 'St. George, UT',
     description: 'Initially reviewed existing Vue.js codebase with Python/Django API. Discussed and implemented migration to React with Hasura based GraphQL API using AWS Aurora Serverless. Continue to support as needed. Also implemented a Next.js based application using NetlifyCMS for content management. Next-based app never released to production.',
     start: '6/2020',
-    end: 'Present',
+    end: '1/2024',
+    reasonForLeaving: "Company ran out of funding",
     technologiesUsed: ['React', 'NextJS', 'NetlifyCMS', 'Hasura', 'AWS Aurora Serverless', 'GraphQL', 'Chart.js', 'React Table (now TanStack Table)', 'Material UI']
   },
   {
@@ -267,6 +297,6 @@ const education: Education[] = [
   }
 ];
 const interestText =
-  "With over 20 years working on the web, I bring experience to building complex web software, where I love to work on UI/UX and front-end logic of sites. My objective is to be working with the best front-end frameworks in JavaScript, HTML5 and CSS3 to build killer web applications.\n Right now, I'm loving Next.js for building both Static and Server-Side rendered sites (with hydration), Chakra-UI as an absolutely incredible set of design components to start with and TypeScript for a strongish-typed JavaScript language.";
+  "With nearly 30 years working on the web, I bring experience to building complex web software, where I love to work on UI/UX and front-end logic of sites. My objective is to be working with the best front-end frameworks in JavaScript, HTML5 and CSS3 to build killer web applications.\n Right now, I'm loving Next.js for building both Static and Server-Side rendered sites (with hydration), PandaCSS as an absolutely incredible set of design components to start with and TypeScript for a strongish-typed JavaScript language.";
 
 export { userDetails, experience, freelance, education, interestText };
