@@ -33,9 +33,6 @@ export default function Home() {
               )
             </li>
             <li>
-              Freelance Web Developer for <Link href="https://hiddenocean.ai">Hidden Ocean</Link>
-            </li>
-            <li>
               Occasional <Link href="https://github.com/riceboyler"> Open Source Contributor</Link>
             </li>
             <li>
@@ -72,7 +69,7 @@ export default function Home() {
               <Link href="https://typescriptlang.org">TypeScript</Link> - I used to hate it. Now I don't know how to ever go back to plain JavaScript again!
             </li>
             <li>
-              <Link href="https://panda-css.com">Panda CSS</Link> - From the creators of Chakra UI (see below), this is a utlitity-first CSS framework that is super easy to use and has a lot of great features. And as a huge benefit since I love Chakra, it uses a very similar syntax, but it all done via PostCSS, so it doesn't require a JS runtime. Pretty
+              <Link href="https://panda-css.com">Panda CSS</Link> - From the creators of Chakra UI (see below), this is a utility-first CSS framework that is super easy to use and has a lot of great features. And as a huge benefit since I love Chakra, it uses a very similar syntax, but it all done via PostCSS, so it doesn't require a JS runtime. Pretty
             </li>
             <li>
               <styled.span textDecoration="line-through">
