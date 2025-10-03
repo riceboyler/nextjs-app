@@ -1,15 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
-import { Stack, Grid, HStack, Flex } from '../../../styled-system/jsx';
-import ContentBox from '../../components/ContentBox';
-import * as resumeData from '../../../data/resumeData';
-import { Heading, Text } from '../../components/Typography';
-import { SocialLink } from './SocialLink';
+import { Stack, Grid, HStack, Flex } from 'styled-system/jsx';
+import ContentBox from 'components/ContentBox';
+import * as resumeData from 'data/resumeData';
+import { Heading, Text } from 'components/Typography';
 import { IoLogoBitbucket, IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMail, IoPhonePortrait } from 'react-icons/io5';
-import { EducationBlock } from './EducationBlock';
-import { ExperienceBlock } from './ExperienceBlock';
-import { ScrollToLink } from './ScrollToLink';
-import { BackToTopButton } from './BackToTopButton';
+import { BackToTopButton, EducationBlock, ExperienceBlock, ScrollToLink, SocialLink } from './components';
 
 const Resume = () => {
   const { userDetails, interestText, experience, freelance, education } = resumeData;

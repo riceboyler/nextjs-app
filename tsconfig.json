@@ -27,9 +27,18 @@
       "@/*": [
         "./src/*"
       ],
-      "contentlayer/generated": [
-        "./.contentlayer/generated"
-      ]
+      "styled-system": [
+        "./styled-system/index"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "data/*": [
+        "./src/data/*"
+      ],
+      "hooks/*": [
+        "./src/hooks/*"
+      ],
     }
   },
   "include": [
@@ -38,7 +47,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "styled-system",
-    ".contentlayer/generated"
   ],
   "exclude": [
     "node_modules"

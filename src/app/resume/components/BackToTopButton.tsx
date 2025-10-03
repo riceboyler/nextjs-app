@@ -1,8 +1,8 @@
 import React from 'react';
 import { IoArrowUpCircle } from 'react-icons/io5';
-import { Flex } from '../../../styled-system/jsx';
+import { Flex } from 'styled-system/jsx';
 import { ScrollToLink } from './ScrollToLink';
-import { Text } from '../../components/Typography';
+import { Text } from 'components/Typography';
 
 export const BackToTopButton = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { styled } from '../../../styled-system/jsx';
+import { styled } from 'styled-system/jsx';
 
 type Props = {
   target: string;
