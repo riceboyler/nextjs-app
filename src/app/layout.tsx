@@ -2,8 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import { PermanentMarker, ZenKaku, ZillaSlab } from '../styles/fonts';
-import { css } from '../../styled-system/css';
-import { Container, Center } from '../../styled-system/jsx';
+import { css } from 'styled-system/css';
+import { Container, Center } from 'styled-system/jsx';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 

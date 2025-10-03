@@ -3,8 +3,8 @@
 import React from 'react';
 import { NavLink } from './Navbar/NavLink';
 import Link from 'next/link';
-import { css } from '../../styled-system/css';
-import { Box, HStack } from '../../styled-system/jsx';
+import { css } from 'styled-system/css';
+import { Box, HStack } from 'styled-system/jsx';
 import Image from 'next/image';
 import { useIsMobile } from '../hooks/useIsMobile';
 

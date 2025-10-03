@@ -1,14 +1,14 @@
 import React from 'react';
-import { styled } from '../../styled-system/jsx';
-import { StyleProps } from '../../styled-system/types';
+import { styled } from 'styled-system/jsx';
+import { JsxStyleProps } from 'styled-system/types';
 
 type Props = {
   size?: string;
   icon?: React.ReactElement;
   isRound?: boolean;
   ariaLabel?: string;
-  bgColor?: StyleProps['backgroundColor'];
-  border?: StyleProps['border'];
+  bgColor?: JsxStyleProps['backgroundColor'];
+  border?: JsxStyleProps['border'];
 };
 
 export const IconButton = ({ icon, isRound, ariaLabel, size, bgColor, border }: Props) => {

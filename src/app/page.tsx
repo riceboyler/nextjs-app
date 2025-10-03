@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, styled } from '../../styled-system/jsx';
+import { Stack, styled } from 'styled-system/jsx';
 import ContentBox from '../components/ContentBox';
 import Link from 'next/link';
 import Aside from '../components/Aside';

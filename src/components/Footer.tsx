@@ -1,6 +1,6 @@
 import React from 'react';
-import { css } from '../../styled-system/css';
-import { Box } from '../../styled-system/jsx';
+import { css } from 'styled-system/css';
+import { Box } from 'styled-system/jsx';
 
 export const Footer = () => {
   return (
