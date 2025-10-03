@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoxProps, styled } from '../../../styled-system/jsx';
+import { BoxProps, styled } from 'styled-system/jsx';
 
 type Props = BoxProps & {
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';

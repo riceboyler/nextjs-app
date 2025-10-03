@@ -82,9 +82,6 @@ export default function Home() {
             <li>
               <Link href="https://vercel.com">Vercel</Link> - I figure if they're good enough to create Next.js, they're good enough to be the main host for Next.js apps.
             </li>
-            <li>
-              <Link href="https://contentlayer.dev">ContentLayer (new for 2023)</Link> - Adding this to better deal with Markdown and MDX. ContentLayer converts Markdown and MDX files into JSON which can easily be queried. It's pretty slick.
-            </li>
           </styled.ul>
         </styled.p>
       </ContentBox>

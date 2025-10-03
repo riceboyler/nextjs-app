@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoxProps, styled } from '../../../styled-system/jsx';
+import { BoxProps, styled } from 'styled-system/jsx';
 
 type Props = BoxProps & {
   children: React.ReactNode;
