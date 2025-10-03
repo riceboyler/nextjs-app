@@ -1,0 +1,35 @@
+---
+title: Hello MDX!
+date: '2022-09-13'
+subtitle: Getting MDX to play nice with Next.js (not as easy as it sounds)
+description: I decided to use MDX to do my blogging, but it was not as easy as I thought it would be. This post goes into some of the details about how I got MDX, Next.js and Prism to all play nicely together.
+---
+
+![Not that MDX](https://res.cloudinary.com/riceboyler/image/upload/w_800/h_600/2022-acura-mdx-introduces-all-new-suv-platform-mdx-type-s-gets-turbo-v6-engine-150160_1_oypobd.jpg)
+
+For what is the newest iteration of my blog (and I seriously have no idea what number it actually is), I'm moving local and using MDX to write all of my posts. If you're not in the know, [MDX](https://mdxjs.com/) is Markdown + JSX, which means I can write my posts in Markdown and then add in React components to make things look nice. I'm using [Next.js](https://nextjs.org) to power the site, so I'm using MDX to write my posts and then Next.js to render them.
+
+Initially, I was trying to fight with various ways of getting MDX integrated (including [mdx-bundler](https://github.com/kentcdodds/mdx-bundler)), but realized that Next.js has recently added built-in support for MDX and it's [much easier to get it going](https://nextjs.org/docs/advanced-features/using-mdx). The key to making it custom for your specific usage is to use the `components` prop to pass in your custom components. For example, since I use Chakra-UI for my base styling library (think TailwindCSS but instead of tons of classes, you use props for styling), I need to use those Typography components (i.e. `Heading` and `Text`) to render my text (this is in my `_app.tsx` file):
+
+```jsx
+  import { MDXProvider } from '@mdx-js/react';
+  import { Heading, Text } from '@chakra-ui/react';
+  ...
+  const components = {
+    h1: ({ children }) => <Heading as="h1" size="2xl">{children}</Heading>,
+    ...
+    p: ({ children }) => <Text>{children}</Text>
+  };
+  ...
+  return (
+    <MDXProvider components={components}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MDXProvider>
+  )
+```
+
+... This post is a work in progress. I'm going to come back and add more info in a bit.
+
+
