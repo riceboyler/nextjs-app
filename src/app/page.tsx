@@ -20,29 +20,29 @@ export default function Home() {
           my={4}
         >
           You've reached the online home of Jason Clark (aka <Link href="/riceboyler">riceboyler</Link>) and my personal web site. I wear many different hats and have a few different titles:
-          <styled.ul gap={4}>
-            <li>Son (to two sets of parents)</li>
-            <li>Husband (to one, only one (Zoni))</li>
-            <li>Father (to three (Owen, Zander, Lauralynn))</li>
-            <li>Front-End Web Lead (for{' '}
-              <Link
-                href="https://chatbooks.com"
-              >
-                Chatbooks
-              </Link>
-              )
-            </li>
-            <li>
-              Occasional <Link href="https://github.com/riceboyler"> Open Source Contributor</Link>
-            </li>
-            <li>
-              Boost Junkie (because I love turbocharged cars)
-            </li>
-            <li>
-              Boomer. Yeah. Kids...
-            </li>
-          </styled.ul>
         </styled.p>
+        <styled.ul gap={4}>
+          <li>Son (to two sets of parents)</li>
+          <li>Husband (to one, only one (Zoni))</li>
+          <li>Father (to three (Owen, Zander, Lauralynn))</li>
+          <li>Former Front-End Web Lead (for{' '}
+            <Link
+              href="https://chatbooks.com"
+            >
+              Chatbooks
+            </Link>
+            )
+          </li>
+          <li>
+            Occasional <Link href="https://github.com/riceboyler"> Open Source Contributor</Link>
+          </li>
+          <li>
+            Boost Junkie (because I love turbocharged cars)
+          </li>
+          <li>
+            Boomer. Yeah. Kids...
+          </li>
+        </styled.ul>
       </ContentBox>
       <ContentBox>
         <h3 >
@@ -61,29 +61,30 @@ export default function Home() {
         </h3>
         <styled.p fontSize="xl">
           I used a bunch of modern technology (as of late 2021, updating in late 2023) to build this site. Here goes:
-          <styled.ul gap={4}>
-            <li>
-              <Link href="https://nextjs.org">Next.js</Link> - a <Link href="https://reactjs.org">React</Link> based application platform that is absolutely KILLER for building websites and apps.
-            </li>
-            <li>
-              <Link href="https://typescriptlang.org">TypeScript</Link> - I used to hate it. Now I don't know how to ever go back to plain JavaScript again!
-            </li>
-            <li>
-              <Link href="https://panda-css.com">Panda CSS</Link> - From the creators of Chakra UI (see below), this is a utility-first CSS framework that is super easy to use and has a lot of great features. And as a huge benefit since I love Chakra, it uses a very similar syntax, but it all done via PostCSS, so it doesn't require a JS runtime. Pretty
-            </li>
-            <li>
-              <styled.span textDecoration="line-through">
-                <Link href="https://chakra-ui.com">Chakra UI</Link> - a library for building UI components with a focus on accessibility and performance.
-              </styled.span>
-              <Aside title="Some thoughts about UI Libraries">
-                I've been going through <Link href="https://css-for-js.dev">Josh W. Comeau's absolutely phenomenal CSS for JS Devs course</Link> and while I love it, I kinda disagree that you shouldn't use a base UI component library. I understand his points about not using something like MUI or Bootstrap, but Chakra-UI is so unopinionated (and it makes it SO easy to implement CSS as props) that I'm gonna argue with him. Either way, huge props (see what I did there?) to Josh for an outstanding course!
-              </Aside>
-            </li>
-            <li>
-              <Link href="https://vercel.com">Vercel</Link> - I figure if they're good enough to create Next.js, they're good enough to be the main host for Next.js apps.
-            </li>
-          </styled.ul>
         </styled.p>
+
+        <styled.ul gap={4}>
+          <li>
+            <Link href="https://nextjs.org">Next.js</Link> - a <Link href="https://reactjs.org">React</Link> based application platform that is absolutely KILLER for building websites and apps.
+          </li>
+          <li>
+            <Link href="https://typescriptlang.org">TypeScript</Link> - I used to hate it. Now I don't know how to ever go back to plain JavaScript again!
+          </li>
+          <li>
+            <Link href="https://panda-css.com">Panda CSS</Link> - From the creators of Chakra UI (see below), this is a utility-first CSS framework that is super easy to use and has a lot of great features. And as a huge benefit since I love Chakra, it uses a very similar syntax, but it all done via PostCSS, so it doesn't require a JS runtime. Pretty
+          </li>
+          <li>
+            <styled.span textDecoration="line-through">
+              <Link href="https://chakra-ui.com">Chakra UI</Link> - a library for building UI components with a focus on accessibility and performance.
+            </styled.span>
+            <Aside title="Some thoughts about UI Libraries">
+              I've been going through <Link href="https://css-for-js.dev">Josh W. Comeau's absolutely phenomenal CSS for JS Devs course</Link> and while I love it, I kinda disagree that you shouldn't use a base UI component library. I understand his points about not using something like MUI or Bootstrap, but Chakra-UI is so unopinionated (and it makes it SO easy to implement CSS as props) that I'm gonna argue with him. Either way, huge props (see what I did there?) to Josh for an outstanding course!
+            </Aside>
+          </li>
+          <li>
+            <Link href="https://vercel.com">Vercel</Link> - I figure if they're good enough to create Next.js, they're good enough to be the main host for Next.js apps.
+          </li>
+        </styled.ul>
       </ContentBox>
     </Stack>
   );

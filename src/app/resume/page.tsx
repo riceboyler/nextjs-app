@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { Stack, Grid, HStack, Flex } from 'styled-system/jsx';
+import { Stack, Grid, HStack, Flex, styled } from 'styled-system/jsx';
 import ContentBox from 'components/ContentBox';
 import * as resumeData from 'data/resumeData';
 import { Heading, Text } from 'components/Typography';
@@ -36,22 +36,20 @@ const Resume = () => {
           <Heading fontSize="2xl">
             Contact Info
           </Heading>
-          <Text fontSize="xl">
-            <address>
-              {userDetails.fname} {userDetails.lname}<br />
-              {userDetails.address}<br />
-              {userDetails.city}, {userDetails.state} {userDetails.zip}<br />
-              <HStack gap={4}>
-                <IoPhonePortrait /> <Text><Link href={`tel:${userDetails.phone}`}>{userDetails.phone}</Link></Text>
-              </HStack>
-              <HStack gap={4}>
-                <IoMail />
-                <Link href={`mailto:${userDetails.email}?Subject=Resume`}>
-                  {userDetails.email}
-                </Link>
-              </HStack>
-            </address>
-          </Text>
+          <styled.address fontSize='xl'>
+            {userDetails.fname} {userDetails.lname}<br />
+            {userDetails.address}<br />
+            {userDetails.city}, {userDetails.state} {userDetails.zip}<br />
+            <HStack gap={4}>
+              <IoPhonePortrait /> <Text><Link href={`tel:${userDetails.phone}`}>{userDetails.phone}</Link></Text>
+            </HStack>
+            <HStack gap={4}>
+              <IoMail />
+              <Link href={`mailto:${userDetails.email}?Subject=Resume`}>
+                {userDetails.email}
+              </Link>
+            </HStack>
+          </styled.address>
           <HStack gap={1}>
             <SocialLink
               href={`https://github.com/${userDetails.github}`}

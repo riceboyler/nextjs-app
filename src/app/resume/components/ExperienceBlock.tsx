@@ -33,14 +33,6 @@ export const ExperienceBlock = ({ job }: Props) => {
       <p>
         {job.description}
       </p>
-      {job.reasonForLeaving && (
-        <styled.em
-          fontSize="16px"
-          fontWeight="300"
-        >
-          Reason for leaving: {job.reasonForLeaving}
-        </styled.em>
-      )}
       {(job.technologiesUsed?.length ?? 0) > 0 && (
         <styled.p fontSize="16px">
           <strong >Tech used:{' '}
@@ -52,6 +44,16 @@ export const ExperienceBlock = ({ job }: Props) => {
               {tech} {(job?.technologiesUsed?.length ?? 0) - 1 === i ? '' : '| '}
             </span>
           ))}
+        </styled.p>
+      )}
+
+      {job.reasonForLeaving && (
+        <styled.p
+          fontSize="16px"
+          fontWeight="400"
+          fontStyle='italic'
+        >
+          Reason for leaving: {job.reasonForLeaving}
         </styled.p>
       )}
     </Box>

@@ -31,7 +31,7 @@ const Aside = ({ title, children }: Props) => {
         p={4}
         mx={[4, 16]}
         fontSize="large"
-        height={isOpen ? 'auto' : '0'}
+        maxHeight={isOpen ? '500px' : '0'}
         opacity={isOpen ? '1' : '0'}
         transition="all 0.5s ease-in-out"
         textAlign={['left', 'center']}

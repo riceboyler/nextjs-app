@@ -22,11 +22,12 @@ export const Navbar = () => {
   return (
     <>
       <HStack
-        maxW={1280}
+        maxW='8xl'
         mx="auto"
         justify="space-between"
         alignItems="center"
         p={4}
+        px="8"
       >
         <Link
           href="/"

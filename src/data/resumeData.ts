@@ -44,13 +44,33 @@ export type Experience = {
 
 const experience: Experience[] = [
   {
+    title: 'Web Architect',
+    company: 'Chatbooks',
+    companyUrl: 'https://chatbooks.com',
+    location: 'Lehi, UT (Remote)',
+    start: '11/2023',
+    end: '9/2025',
+    description: 'Continuation and expansion of Marketing Tech Lead role. Nearly completed migration of marketing site from Pages Router to App Router with React Server Components, switching to PandaCSS so we could have smaller bundle sizes and creation of our own plugin. Focused on performance, so middleware became essential to allow for user customization and geo-targeting.',
+    reasonForLeaving: 'Company layoffs',
+    technologiesUsed: [
+      'Next.js (App Router)',
+      'bun.js',
+      'PandaCSS',
+      'Vercel',
+      'Builder.io',
+      'TanStack Form',
+      'TanStack Query'
+    ]
+  },
+  {
     title: 'Marketing Tech Lead',
     company: 'Chatbooks',
     companyUrl: 'https://chatbooks.com',
     location: 'Lehi, UT (Remote)',
     description: 'Own all marketing technology decisions and implementation details, including moving from Prismic to Builder.io for our CMS and evaluating potentially moving to Shopify Plus for our e-commerce solution. Integrated Builder with custom components to override base blocks like buttons and images (to add analytics data and to use `next/image` for better pre-processing. Established processes for non-technical business users to be able to edit pages. Spearheaded effort to move Shop Screen and Product Description Pages (PDPs) from native apps to Builder and integrate segmented shop screens based on customer data.',
     start: '3/2023',
-    end: 'Present',
+    end: '11/2023',
+    reasonForLeaving: 'Transferred back to Engineering',
     technologiesUsed: [
       'Next.js',
       'NX',
