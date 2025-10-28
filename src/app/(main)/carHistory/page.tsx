@@ -1,6 +1,6 @@
 import React from 'react';
-import ContentBox from '../../components/ContentBox';
-import { Heading, Text } from '../../components/Typography';
+import ContentBox from '@/components/ContentBox';
+import { Heading, Text } from '@/components/Typography';
 
 const CarHistory = () => {
   return (

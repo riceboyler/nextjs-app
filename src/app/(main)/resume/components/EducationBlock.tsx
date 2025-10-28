@@ -1,6 +1,5 @@
 import { Box, HStack, styled } from 'styled-system/jsx';
-import React from 'react';
-import { Education } from '../../../data/resumeData';
+import type { Education } from '@/data/resumeData';
 
 type Props = {
   school: Education;

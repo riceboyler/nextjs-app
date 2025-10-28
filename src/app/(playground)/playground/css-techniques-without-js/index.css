@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+  color-scheme: light dark;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --mainblue: #3c6b92;
+  --lightblue: #6acce2;
+  --blue: light-dark(var(--mainblue), var(--lightblue));
+  --teal: #2c566a;
+  --darkblue: #193742;
+  --tan: #e1d8b9;
+  --orange: #cb7d20;
+  --brown: #51341a;
+  --darkorange: #995522;
+  --purple: #896287;
+  --black: #000000;
+  --white: #ffffff;
+  --body-bg: light-dark(var(--white), var(--black));
+  --text: light-dark(var(--white), var(--black));
+  interpolate-size: allow-keywords;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background-color: var(--tan);
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1139px;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+header {
+  background: url(https://assets.codepen.io/296057/lil-hiking-banner.jpg)
+    no-repeat;
+  background-size: cover;
+}
+.intro {
+  padding: 2rem;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--text);
+}
+main {
+  background-color: var(--body-bg);
+  padding: 2rem;
+}
+.floatleft {
+  float: left;
+  margin: 0 1rem 3rem 0;
+  max-width: 175px;
+}
+article {
+  /* this will clear the float within each article */
+  display: flow-root;
+}
+aside {
+  background-color: var(--text);
+  padding: 2rem;
+}
+@media (min-width: 850px) {
+  .tour-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  header {
+    height: 582px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+details {
+  border-bottom: 2px solid var(--darkblue);
+}
+
+summary {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  background-color: var(--orange);
+  border-bottom: 2px solid var(--bark);
+  padding: 0.5rem;
+}
+
+summary::marker {
+  display: none;
+}
+.details-body {
+  padding: 0.1rem 1rem 1rem;
+  background-color: var(--tan);
+  color: var(--text);
+}
+details span {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+details span:hover {
+  cursor: pointer;
+}
+details span::before {
+  content: "🥾 ";
+  transition: rotate 200ms ease-out;
+  font-size: 3rem;
+  rotate: -20deg;
+}
+details[open] span::before {
+  rotate: 30deg;
+}
+
+::details-content {
+  transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+  height: 0;
+  overflow: clip;
+}
+
+[open]::details-content {
+  height: auto;
+}
+
+.tour-grid button {
+  background-color: var(--teal);
+  color: white;
+  padding: .75rem;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tour-grid button:hover {
+  background-color: var(--darkblue);
+}
+
+div[popover] {
+  max-width: 90vw;
+  padding: 1rem;
+  border-radius: 16px;
+}
+div[popover]::backdrop {
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+}
+
+div[popover],
+div[popover]::backdrop {
+  transition: 500ms opacity, 500ms display allow-discrete,
+    500ms overlay allow-discrete;
+  opacity: 0;
+}
+
+div[popover]:popover-open,
+div[popover]:popover-open::backdrop {
+  opacity: 1;
+}
+@starting-style {
+  div[popover]:popover-open,
+  div[popover]:popover-open::backdrop {
+    opacity: 0;
+  }
+}

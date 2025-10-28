@@ -1,6 +1,5 @@
 import { Box, HStack, styled } from 'styled-system/jsx';
-import React from 'react';
-import { Experience } from '../../../data/resumeData';
+import type { Experience } from '@/data/resumeData';
 
 type Props = {
   job: Experience;
@@ -39,7 +38,7 @@ export const ExperienceBlock = ({ job }: Props) => {
           </strong>
           {job?.technologiesUsed?.map((tech, i) => (
             <span
-              key={i}
+              key={`${job.company}-${tech}`}
             >
               {tech} {(job?.technologiesUsed?.length ?? 0) - 1 === i ? '' : '| '}
             </span>
