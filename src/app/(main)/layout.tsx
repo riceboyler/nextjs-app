@@ -1,6 +1,4 @@
-import React from "react";
 import type { Metadata } from "next";
-// @ts-ignore
 import "./globals.css";
 import { PermanentMarker, ZenKaku, ZillaSlab } from "../../styles/fonts";
 import { css } from "styled-system/css";

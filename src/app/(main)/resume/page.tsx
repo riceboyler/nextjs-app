@@ -92,10 +92,10 @@ const Resume = () => {
           </Heading>
           <BackToTopButton />
         </Flex>
-        {experience.map((job, i) => (
+        {experience.map((job) => (
           <ExperienceBlock
             job={job}
-            key={i}
+            key={`${job.company}-${job.title}`}
           />
         ))}
       </ContentBox>
@@ -106,10 +106,10 @@ const Resume = () => {
           </Heading>
           <BackToTopButton />
         </Flex>
-        {freelance.map((job, i) => (
+        {freelance.map((job) => (
           <ExperienceBlock
             job={job}
-            key={i}
+            key={`${job.company}-${job.title}`}
           />
         ))}
       </ContentBox>
@@ -123,7 +123,7 @@ const Resume = () => {
         {education.map((school, i) => (
           <EducationBlock
             school={school}
-            key={i}
+            key={school.school}
           />
         ))}
       </ContentBox>
