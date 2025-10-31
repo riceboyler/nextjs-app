@@ -1,5 +1,4 @@
-import React from "react";
-//@ts-ignore
+import type React from "react";
 import "./index.css";
 import { Montserrat } from "next/font/google";
 
