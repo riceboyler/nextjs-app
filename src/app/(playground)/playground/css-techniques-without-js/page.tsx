@@ -1,5 +1,4 @@
-/** biome-ignore-all lint/performance/noImgElement: <explanation> */
-import React from "react";
+/** biome-ignore-all lint/performance/noImgElement: This is not really a Next page */
 
 export default function Page() {
   return (
