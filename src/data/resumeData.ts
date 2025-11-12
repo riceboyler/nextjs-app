@@ -22,7 +22,7 @@ const userDetails: UserDetails = {
   state: 'NV',
   zip: '89506',
   phone: '435.383.2773',
-  email: 'riceboyler@gmail.com',
+  email: 'riceboyler@pm.me',
   facebook: 'riceboyler',
   twitter: 'riceboyler',
   github: 'riceboyler',
@@ -214,6 +214,26 @@ const experience: Experience[] = [
     reasonForLeaving:
       'Needed to leave Tennessee due to family issues (I continued as a remote consultant for Avatar for 16 months doing work after hours and on weekends)',
     technologiesUsed: ['jQuery', 'Knockout', 'Durandal', 'Angular']
+  },
+  {
+    title: 'Various - Software Developer/IT Director/Senior Network Engineer/Development Team Lead',
+    company: 'cj Advertising/Malham Leverage Group/Legal Intake Professionals',
+    location: 'Nashville, TN',
+    description: 'Wore many different hats during my 7.5 year tenure. Started as a PHP/ASP.NET developer maintaining the PHP web app for Legal Intake Professionals, migrating cjTrack from a .NET Windows App to an ASP.NET Web Application with AJAX functionality. Served as IT Director for a year in the midst of explosive growth. Then returned to development, focusing primarily on front-end performance and UX.',
+    start: '2/2005',
+    end: '10/2012',
+    reasonForLeaving: 'Time for new opportunities to expand my horizons',
+    technologiesUsed: ['PHP', 'ASP.NET/C# (3.5)', 'MSSQL', 'jQuery', 'Knockout']
+  },
+  {
+    title: '.NET Developer I',
+    company: 'Dell Computer Corporation',
+    location: 'Nashville, TN',
+    description: 'Started as a SQL specialist writing dynamic stored procedures, user defined functions and (ewww) cursors. Migrated to ASP.NET web application development and helped build Customer Satisfaction (CSAT) Dashboard that pulled data and aggregated for leadership to review CSAT trends.',
+    start: '2/2003',
+    end: '2/2005',
+    reasonForLeaving: 'Even after not being a tech support specialist for 3 years, called back to the floor due to offshore shutdown. Realized I would struggle to be seen as anything other than a tech support specialist.',
+    technologiesUsed: ['MSSQL', 'ASP.NET/C# (2.0)', 'Classic ASP', 'HTML4/CSS2']
   }
 ];
 
