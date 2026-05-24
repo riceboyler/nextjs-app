@@ -1,12 +1,11 @@
 "use client";
 
-import React from 'react';
-import { NavLink } from './Navbar/NavLink';
+import Image from 'next/image';
 import Link from 'next/link';
 import { css } from 'styled-system/css';
 import { Box, HStack } from 'styled-system/jsx';
-import Image from 'next/image';
 import { useIsMobile } from '../hooks/useIsMobile';
+import { NavLink } from './Navbar/NavLink';
 
 export const Navbar = () => {
   const isMobile = useIsMobile();
@@ -50,6 +49,7 @@ export const Navbar = () => {
               className={css({
                 borderRadius: '50%'
               })}
+              loading="eager"
             />
             <h1
               className={css({

@@ -1,8 +1,7 @@
-import React from "react";
-import { Stack, styled } from "styled-system/jsx";
-import ContentBox from "../../components/ContentBox";
 import Link from "next/link";
+import { Stack, styled } from "styled-system/jsx";
 import Aside from "../../components/Aside";
+import ContentBox from "../../components/ContentBox";
 import { PageHeader } from "../../components/Typography/PageHeader";
 
 export default function Home() {
@@ -22,8 +21,10 @@ export default function Home() {
           <li>Husband (to one, only one (Zoni))</li>
           <li>Father (to three (Owen, Zander, Lauralynn))</li>
           <li>
-            Former Front-End Web Lead (for{" "}
-            <Link href="https://chatbooks.com">Chatbooks</Link>)
+            Front-End Web Lead (for{" "}
+            <Link href="https://truefirestudios.com">TrueFire Studios</Link> |{" "}
+            <Link href="https://artistworks.com">ArtistWorks</Link> |{" "}
+            <Link href="https://truefire.com">TrueFire</Link>)
           </li>
           <li>
             Occasional{" "}
@@ -55,9 +56,12 @@ export default function Home() {
       </ContentBox>
       <ContentBox>
         <h3>How It's Made &copy;</h3>
+        <Aside title="Coming Soon(ish)">
+          After using Vue 3 and Nuxt 4 at my new job at TFS, I have absolutely fallen in love with the way things are done in Nuxt. If you want auto-imports, you can have them. If you want to use a bunch of plugins, you can do that. But you don't have to. So, I'll be rebuilding this site in Nuxt 4 (probably with Tailwind so I can get to know it better...) in the very near future.
+        </Aside>
         <styled.p fontSize="xl">
-          I used a bunch of modern technology (as of late 2021, updating in late
-          2023) to build this site. Here goes:
+          I used a bunch of modern technology (as of late 2021, updating in mid
+          2026) to build this site. NOTE: Absolutely no AI tools were used on this specific site, but I have become a fan of Claude Code and use in my daily development now. Here goes:
         </styled.p>
 
         <styled.ul gap={4}>
@@ -77,7 +81,7 @@ export default function Home() {
             framework that is super easy to use and has a lot of great features.
             And as a huge benefit since I love Chakra, it uses a very similar
             syntax, but it all done via PostCSS, so it doesn't require a JS
-            runtime. Pretty
+            runtime. Pretty freaking cool if you ask me.
           </li>
           <li>
             <styled.span textDecoration="line-through">
