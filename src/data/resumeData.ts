@@ -44,6 +44,26 @@ export type Experience = {
 
 const experience: Experience[] = [
   {
+    title: "Lead Frontend Engineer",
+    company: "TrueFire Studios",
+    companyUrl: "https://truefirestudios.com",
+    location: "St. Petersburg, FL (Remote)",
+    start: "12/1/2025",
+    end: '',
+    description: "Function as a manager of 2 frontend focused web engineers as well as the lead frontend engineer and the release engineer across 2 brands (currently) releasing twice a week (looking to move to CI/CD ASAP). My first professional exposure to Vue/Nuxt along with my first large project working with Tailwind. Responsible for initiating a monorepo for our frontend applications for ArtistWorks to decrease code copying and enhance reuse. Responsible for introducing Builder.io as a CMS option and implementing across both TrueFire and ArtistWorks.",
+    technologiesUsed: [
+      'Vue 3',
+      'Nuxt 4',
+      'pnpm',
+      'bun.js',
+      'Tailwind (3/4)',
+      'Pinia',
+      'Pinia Colada',
+      'Builder.io',
+      'Customer.io'
+    ]
+  },
+  {
     title: 'Web Architect',
     company: 'Chatbooks',
     companyUrl: 'https://chatbooks.com',
@@ -339,4 +359,5 @@ const education: Education[] = [
 const interestText =
   "With nearly 30 years working on the web, I bring experience to building complex web software, where I love to work on UI/UX and front-end logic of sites. My objective is to be working with the best front-end frameworks in JavaScript, HTML5 and CSS3 to build killer web applications.\n Right now, I'm loving Next.js for building both Static and Server-Side rendered sites (with hydration), PandaCSS as an absolutely incredible set of design components to start with and TypeScript for a strongish-typed JavaScript language.";
 
-export { userDetails, experience, freelance, education, interestText };
+export { education, experience, freelance, interestText, userDetails };
+
