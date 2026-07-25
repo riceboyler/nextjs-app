@@ -175,11 +175,11 @@ export const FuseboxExplorer = () => {
 				</Box>
 			) : (
 				<Grid
-					gridTemplateColumns={{
-						base: "1fr",
-						md: "repeat(2, 1fr)",
-						xl: "repeat(3, 1fr)",
-					}}
+					gridTemplateColumns={
+						groupedRows.length === 1
+							? { base: "1fr" }
+							: { base: "1fr", md: "repeat(2, 1fr)", xl: "repeat(3, 1fr)" }
+					}
 					gap={4}
 					alignItems="start"
 				>
